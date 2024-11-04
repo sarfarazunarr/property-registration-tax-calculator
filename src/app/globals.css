@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-color: #000015;
+}
+
+.main_container{
+  width: 80vw;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_container h1{
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-family: "Outfit";
+  margin-bottom: 0px;
+}
+.main_container p{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(215, 215, 215);
+  font-weight: normal;
+  font-family: "Inter";
+  margin-bottom: 50px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.shortarea {
+  width: 50%;
+  background-color: rgb(20, 26, 52);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.shortarea h4{
+  text-align: left;
+  color: white;
+  font-weight: 700;
+  font-family: "Outfit";
+  font-size: 25px;
+}
+.input-area{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  gap: 5px;
+}
+.input-area label {
+  font-weight: 500;
+  color: whitesmoke;
+  font-family: "Inter";
+  font-size: 15px;
+  display: block;
+}
+.input-area input {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(235, 235, 235);
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  font-family: "Inter";
+}
+.input-area select {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(235, 235, 235);
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  font-size: "Inter";
+}
+.input-area select option{
+  padding: 10px;
+  background: rgb(0, 0, 50);
+  color: white;
+  font-family: "Outfit";
+  font-size: 15px;
+}
+
+
+
+/* Button Variation */
+.primary{
+  background-color: white;
+  color: #000015;
+  font-family: "Outfit";
+  border-radius: 5px;
+  border: none;
+}
+.secondary {
+  background-color: #000015;
+  color: white;
+  font-family: "Outfit";
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.default {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.small{
+  padding: 5px 15px;
+  font-size: 15px;
+}
+.large{
+  padding: 15px 35px;
+  font-size: 20px;
+}
+.shortarea table{
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  table-layout: auto;
+}
+
+.shortarea table tr td{
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Outfit";
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .shortarea {
+    width: 100%;
+    padding: 30px;
+    margin: 10px;
+  }
+  .main_container {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  .main_container h1{
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  .main_container p{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .shortarea table{
+    width: 100vw;
+    margin: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .input-area{
+    margin: 5px 0px;
+  }
+  .shortarea table tr td{
+    font-size: 16px;
+  }
+}
